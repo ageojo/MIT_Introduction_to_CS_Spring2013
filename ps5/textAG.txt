@@ -1,0 +1,30 @@
+# trigger file - if you've done through part 11 but no stories are popping
+# up, you should edit this file to contain triggers that will fire on current
+# news stories!
+# Problem 11: 
+# RSS reader that tracks news of the US budget sequestration
+
+# title trigger named t1
+t1 TITLE Lebanon
+
+# title trigger named t2
+t2 TITLE Syria
+
+# title trigger named t3
+t3 TITLE Senate
+
+# phrase trigger named ph1
+ph1 PHRASE street art
+
+# composite trigger named t4
+t4 AND t1 t2 ph1
+
+# composite trigger named t5
+#t5 NOT t3
+
+# composite trigger named t6
+#t6 AND t4 t5
+
+# the trigger set contains t6 and ph1
+ADD t4
+
