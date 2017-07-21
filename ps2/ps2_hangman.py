@@ -2,14 +2,7 @@
 # Name: Amy C. Geojo
 
 # Hangman
-#
 
-
-# -----------------------------------
-# Helper code
-# You don't need to understand this helper code,
-# but you will have to know how to use the functions
-#
 
 import random
 import string
@@ -51,16 +44,13 @@ def choose_word(word_dict, num_letters):
     """
     return random.choice(word_dict[num_letters])
 
-# end of helper code
-# -----------------------------------
 
 # load the words into the word_dict variable
 # so that it can be accessed from anywhere in the program
 word_dict = load_words()
 
-# your code begins here!
 
-""" first list of relevant functions to create"""
+
 
 
 def Fill_In_Guessed_Letters(guess, mystery_word, guess_word_list):
